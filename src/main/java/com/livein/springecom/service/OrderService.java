@@ -18,7 +18,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.transaction.annotation.Transactional;
+
 @Service
+@Transactional
 public class OrderService {
     @Autowired
     private OrderRepo orderRepo;
